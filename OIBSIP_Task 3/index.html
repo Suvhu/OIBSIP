@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Temperature Converter</h2>
+    <form onsubmit="functemp(); return false;" class="form-contain">
+      <div class="form-contain1">
+        <label for="temp">Temperature value</label>
+        <input type="number" name="temp_value" id="temp_value1" class="boxy">
+      </div>
+      <div class="form-contain2" >
+        <div class="frto" id="from">
+          <label for="input1">From-</label>
+          <select name="temp_from" id="temp1">
+            <option value="sel">Select</option>
+            <option value="cel">Celcius</option>
+            <option value="far">Fahrenheit</option>
+            <option value="kel">Kelvin</option>
+          </select>
+        </div>
+        <div class="frto" id="to">
+          <label for="input2">To-</label>
+          <select name="temp_to" id="temp2">
+            <option value="sel">Select</option>
+            <option value="cel">Celcius</option>
+            <option value="far">Fahrenheit</option>
+            <option value="kel">Kelvin</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-contain1">
+        <label for="result">Result</label>
+        <div class="boxy" id="show"> </div>
+      </div>
+      <button class="btn"><h4>Convert</h4></button>
+    </form>
+  </div>
+  <script>
+    function functemp() {
+      const temp_value1 = document.getElementById("temp_value1").value;
+      const temp1 = document.getElementById("temp1");
+      const temp1_value = temp1.options[temp1.selectedIndex].value;
+      const temp2 = document.getElementById("temp2");
+      const temp2_value = temp2.options[temp2.selectedIndex].value;
+
+      function celtofar(n) {
+        let f = parseFloat((n * 9 / 5) + 32).toFixed(2);
+        return f;
+      }
+      function celtokel(n) {
+        let f = parseFloat(Number(n) + 273.15).toFixed(2);
+        return f;
+      }
+      function fartocel(n) {
+        let f = parseFloat((n - 32) * 5 / 9).toFixed(2);
+        return f;
+      }
+      function fartokel(n) {
+        let f = parseFloat(((n - 32) * 5 / 9) + 273.15).toFixed(2);
+        return f;
+      }
+      function keltocel(n) {
+        let f = parseFloat(n - 273.15).toFixed(2);
+        return f;
+      }
+      function keltofar(n) {
+        let f = parseFloat(((n - 273.15) * 9 / 5) + 32).toFixed(2);
+        return f;
+      }
+
+      let result;
+      // from celcius
+      if (temp1_value == 'cel' && temp2_value == 'cel') {
+        result = temp_value1;
+        document.getElementById("show").innerHTML = `${result} °C`;
+      }
+      if (temp1_value == 'cel' && temp2_value == 'far') {
+        result = celtofar(temp_value1);
+        document.getElementById("show").innerHTML = `${result} °F`;
+      }
+      if (temp1_value == 'cel' && temp2_value == 'kel') {
+        result = celtokel(temp_value1);
+        document.getElementById("show").innerHTML = `${result} K`;
+      }
+      // from fahrenheit
+      if (temp1_value == 'far' && temp2_value == 'far') {
+        result = temp_value1;
+        document.getElementById("show").innerHTML = `${result} °F`;
+      }
+      if (temp1_value == 'far' && temp2_value == 'cel') {
+        result = fartocel(temp_value1);
+        document.getElementById("show").innerHTML = `${result} °C`;
+      }
+      if (temp1_value == 'far' && temp2_value == 'kel') {
+        result = fartokel(temp_value1);
+        document.getElementById("show").innerHTML = `${result} K`;
+      }
+      // from kelvin
+      if (temp1_value == 'kel' && temp2_value == 'kel') {
+        result = temp_value1;
+        document.getElementById("show").innerHTML = `${result} K`;
+      }
+      if (temp1_value == 'kel' && temp2_value == 'far') {
+        result = keltofar(temp_value1);
+        document.getElementById("show").innerHTML = `${result} °F`;
+      }
+      if (temp1_value == 'kel' && temp2_value == 'cel') {
+        result = keltocel(temp_value1);
+        document.getElementById("show").innerHTML = `${result} °C`;
+      }
+      //nothing selected
+      if (temp1_value == 'sel' || temp2_value == 'sel') {
+        document.getElementById("show").innerHTML = ` `;
+        alert("Please enter From & To section properly");
+      }
+    }
+  </script>
+</body>
+
+</html>
