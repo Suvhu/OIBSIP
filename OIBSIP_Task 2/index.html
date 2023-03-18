@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhashish's personal portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="favicon1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="funhskill()">
+<!-- navbar section -->
+    <div class="header">
+        <nav class="navbar">
+            <div class="left">
+                <a href="#home"><img src="logo.png" id="logoimg"></a>
+                <a href="#home"><img src="logoname.png" id="logoname"></a>
+                <i onclick="funcshow()" id="menu-img"><img src="menu.png"></i>
+            </div>
+            <div class="right" id="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i onclick="funchide()" id="cross-img"><img src="cross.png"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Home section -->
+    <div class="home-section" id="home">
+        <div class="home-left">
+            <div class="home-contain1">
+                <span>Hello, my name is </span>
+                <h1>Subhashish Swain</h1>
+                <div class="home-about">
+                    <h3>I,m a </h3>
+                    <ul>
+                        <li>
+                            <h3>Developer</h3>
+                        </li>
+                        <li>
+                            <h3>Coder</h3>
+                        </li>
+                        <li>
+                            <h3>Artist</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="my_cv.pdf" download>Download CV</a>
+            </div>
+        </div>
+        <div class="home-right">
+            <img src="homeimg.png">
+        </div>
+    </div>
+    <!-- About section -->
+    <div class="about-section" id="about">
+        <h1>About </h1>
+        <div class="about-section-tail">
+            <div class="about-left">
+                <h3>about me</h3>
+                <span>An independent and self motivated undergraduate with strong problem
+                    solving skills, ability to work in a team and seeking to leverage my technical
+                    skills and continue learning in a challenging and dynamic professional
+                    setting. To work hard in a organization to achieve organizational or personal
+                    goals. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eaque, cumque amet quibusdam
+                    repellat quis asperiores non id autem dolorum, fugiat facilis earum, sapiente inventore? Ab
+                    voluptatem architecto, totam, blanditiis praesentium vitae, amet laboriosam veniam ipsam voluptas
+                    impedit deserunt molestiae eveniet? Id distinctio quis dignissimos facilis adipisci non pariatur
+                    deserunt.</span>
+            </div>
+            <div class="about-right">
+                <ul class="contain-main">
+                    <li id="skill1"><a onclick="funhskill()">
+                            <h3>hard skills</h3>
+                        </a></li>
+                    <li id="skill2"><a onclick="funsskill()">
+                            <h3>soft skills</h3>
+                        </a></li>
+                    <li id="skill3"><a onclick="funeducation()">
+                            <h3>education</h3>
+                        </a></li>
+                    <li id="skill4"><a onclick="funhobby()">
+                            <h3>hobbies</h3>
+                        </a></li>
+                </ul>
+                <ul class="contain-mains">
+                    <li class="main" id="main1">
+                        <ul>
+                            <li>Front-end (HTML,CSS,JS)</li>
+                            <li>Oops Using Java</li>
+                            <li>Intermediate in C</li>
+                            <li>Oops Using C++</li>
+                            <li>Python Programming</li>
+                        </ul>
+                    </li>
+                    <li class="main" id="main2">
+                        <ul>
+                            <li>Creativity</li>
+                            <li>Adaptibility</li>
+                            <li>Problem solving</li>
+                            <li>Team work</li>
+                            <li>Time management</li>
+                        </ul>
+                    </li>
+                    <li class="main" id="main3">
+                        <ul>
+                            <li>
+                                <h5>BTech in Computer Science Engineering</h5>
+                                <h5>IGIT , Dhenkanal, Odisha
+                                </h5>
+                                <span>2020-2024</span>
+                            </li>
+                            <li>
+                                <h5>Class 11th-12th
+                                </h5>
+                                <span>Upendranath College, Soro, Balasore, Odisha
+                                </span>
+                                <span>2017-2019</span>
+                            </li>
+                            <li>
+                                <h5>Upto Class 10th
+                                </h5>
+                                <span>Barapur Govt. High School, Barapur, Odisha
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main" id="main4">
+                        <ul>
+                            <li>Pencil Sketching</li>
+                            <li>Listening Music</li>
+                            <li>Playing Badminton and Carrom</li>
+                            <li>Video Editing</li>
+                            <li>Paper Crafting</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Service section -->
+    <div class="service-section" id="service">
+        <h1>Services</h1>
+        <div class="services">
+            <div class="service1">
+                <img src="web.png">
+                <h3>Web Design</h3>
+                <span>
+                    Web design encompasses many different skills and disciplines in the production and maintenance of
+                    websites. The different areas of web design include web graphic design; user interface design;
+                    authoring, including standardised code.
+                </span>
+                <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank" class="btn1">Learn more</a>
+            </div>
+            <div class="service1">
+                <img src="design.png">
+                <h3>Creative Design</h3>
+                <span>
+                    Creative design is a process that uses digital and physical image-making tools to create renders and
+                    representations used for marketing purposes. Creative design as a field relies heavily on the work
+                    of visual designers but is not entirely limited to it.
+                </span>
+                <a href="https://en.wikipedia.org/wiki/Pencil_drawing" target="_blank" class=" btn1">Learn more</a>
+            </div>
+            <div class="service1">
+                <img src="pencil.png">
+                <h3>Pencil Sketch</h3>
+                <span>
+                    pencil drawing, drawing executed with an instrument composed of graphite enclosed in a wood casing
+                    and intended either as a sketch for a more elaborate work in another medium, an exercise in visual
+                    expression, or a finished work.
+                </span>
+                <a href="https://en.wikipedia.org/wiki/Pencil_drawing" target="_blank" class="btn1">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!--work section  -->
+    <div class="work-section" id="work">
+        <h1>Latest Projects</h1>
+        <div class="works">
+            <div class="work1">
+                <img src="back1.jpg">
+                <div class="work1-head">
+                    <h3>DiagnoSelf</h3>
+                </div>
+                <div class="work1-about">
+                    <span>
+                        This is a Website to diagnosis yourself.Please do visit the website.
+                    </span>
+                    <a href="https://suvhu.github.io/Diagnoself/" target="_blank"><img src="link.png"></a>
+                </div>
+            </div>
+            <div class="work1">
+                <img src="back3.jpg">
+                <div class="work1-head">
+                    <h3>Notes</h3>
+                </div>
+                <div class="work1-about">
+                    <span>
+                        This is a Website to write important notes.Please do visit the website.
+                    </span>
+                    <a href="https://suvhu.github.io/Important-notes/" target="_blank"><img src="link.png"></a>
+                </div>
+            </div>
+            <div class="work1">
+                <img src="back2.jpg">
+                <div class="work1-head">
+                    <h3>Library</h3>
+                </div>
+                <div class="work1-about">
+                    <span>
+                        This is a Website to add books to library.Please do visit the website.
+                    </span>
+                    <a href="https://suvhu.github.io/College-library/" target="_blank"><img src="link.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact section -->
+    <div class="contact-section" id="contact">
+        <h1>Contact</h1>
+        <div class="contacts">
+            <h2>Have you any query ?</h2>
+            <h4>send me an email</h4>
+            <form action="https://formspree.io/f/xrgvlryd" class="contact1" method="POST">
+                <div class="contact2">
+                    <input type="text" name="Name-" class="form-input" id="contact-name" required>
+                    <h5>your name</h5>
+                </div>
+                <div class="contact2">
+                    <input type="text" name="Email-" class="form-input" id="contact-email" required>
+                    <h5>your email</h5>
+                </div>
+                <div class="contact3" id="query">
+                    <textarea name="Query-" class="form-input" id="contact-body" cols="20" rows="5"
+                    required></textarea>
+                    <h5>your query</h5>
+                </div>
+                <button type="submit" class="btn1 btn2" id="btn2" onclick="funvan()">send</button>
+            </form>
+            <div class="get-touch">
+                <h4>get in touch-</h4>
+                <a href="https://www.linkedin.com/in/subhashish-swain-088b69241" target="_blank"><img
+                        src="linked.png"></a>
+                <a href="https://www.facebook.com/subhashish.swain.52?mibextid=ZbWKwL" target="_blank"><img
+                        src="fb.png"></a>
+                <a href="https://instagram.com/s.u._.v?igshid=ZDdkNTZiNTM=" target="_blank"><img src="insta.png"></a>
+            </div>
+        </div>
+    </div>
+
+<!-- footer section -->
+    <footer>
+        <span>Copyright © 2023 by <span>Subhashish</span> | All Rights Reserved</span>
+        <a href="#home"><img src="up.png"></a>
+    </footer>
+
+<!-- javascript -->
+    <script>
+        const skill1 = document.getElementById("skill1");
+        const skill2 = document.getElementById("skill2");
+        const skill3 = document.getElementById("skill3");
+        const skill4 = document.getElementById("skill4");
+        const main1 = document.getElementById("main1");
+        const main2 = document.getElementById("main2");
+        const main3 = document.getElementById("main3");
+        const main4 = document.getElementById("main4");
+        function funhskill() {
+            main1.style.display = "block";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            skill1.style.backgroundColor = "brown";
+            skill2.style.backgroundColor = "transparent";
+            skill3.style.backgroundColor = "transparent";
+            skill4.style.backgroundColor = "transparent";
+        }
+        function funsskill() {
+            main1.style.display = "none";
+            main2.style.display = "block";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            skill2.style.backgroundColor = "brown";
+            skill1.style.backgroundColor = "transparent";
+            skill3.style.backgroundColor = "transparent";
+            skill4.style.backgroundColor = "transparent";
+        }
+        function funeducation() {
+            main3.style.display = "block";
+            main2.style.display = "none";
+            main1.style.display = "none";
+            main4.style.display = "none";
+            skill3.style.backgroundColor = "brown";
+            skill2.style.backgroundColor = "transparent";
+            skill1.style.backgroundColor = "transparent";
+            skill4.style.backgroundColor = "transparent";
+        }
+        function funhobby() {
+            main4.style.display = "block";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main1.style.display = "none";
+            skill4.style.backgroundColor = "brown";
+            skill2.style.backgroundColor = "transparent";
+            skill3.style.backgroundColor = "transparent";
+            skill1.style.backgroundColor = "transparent";
+        }
+
+        function funvan() {
+
+            setTimeout(() => {
+                document.getElementById("contact-name").value = "";
+                document.getElementById("contact-email").value = "";
+                document.getElementById("contact-body").value = "";
+            }, 500);
+        }
+
+        const righty=document.getElementById("right");
+        const menuimg=document.getElementById("menu-img")
+        function funchide(){
+            righty.style.display="none";
+            menuimg.style.display="block";
+        }
+        function funcshow(){
+            righty.style.display="block";
+            menuimg.style.display="none";
+        }
+    </script>
+</body>
+
+</html>
